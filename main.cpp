@@ -18,33 +18,39 @@ void forLoop(int loops){
 void weekdayPrinter(int weekDay){
   switch (weekDay) {
   case 1:
-    cout << "Monday";
+    cout << "Monday" << endl;
     break;
   case 2:
-    cout << "Tuesday";
+    cout << "Tuesday"<< endl;
     break;
   case 3:
-    cout << "Wednesday";
+    cout << "Wednesday"<< endl;
     break;
   case 4:
-    cout << "Thursday";
+    cout << "Thursday"<< endl;
     break;
   case 5:
-    cout << "Friday";
+    cout << "Friday"<< endl;
     break;
   case 6:
-    cout << "Saturday";
+    cout << "Saturday"<< endl;
     break;
   case 7:
-    cout << "Sunday";
+    cout << "Sunday"<< endl;
     break;
 }
 }
 
+void reference(int &reference) {  
+    std::cout << "reference " << reference << endl;
+}
+
 int main() {
+  int toReference = 187;
   whilePrinter(8);
   forLoop(5);
   weekdayPrinter(3);
+  reference(toReference);
   return 0;
 }
 
